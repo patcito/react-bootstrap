@@ -273,11 +273,12 @@ class Modal extends React.Component {
   }
 
   renderBackdrop = props => {
-    const { bsPrefix, backdropClassName, animation } = this.props;
+    const { bsPrefix, backdropClassName, animation, id } = this.props;
 
     return (
       <div
         {...props}
+        id={id}
         className={classNames(
           `${bsPrefix}-backdrop`,
           backdropClassName,
